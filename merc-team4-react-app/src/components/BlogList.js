@@ -15,7 +15,7 @@ const BlogList = () => {
             setAllBlogs(data);
             console.log(data);
           } catch (err) {
-            setError(err);
+            // setError(err);
             console.error(err);
           }
         };
@@ -30,7 +30,7 @@ const BlogList = () => {
             <div key={blog.id}>
               {/* Render individual blog data as a clickable link */}
               <h2>
-                <Link to={`/blog/${blog.id}`}>{blog.title}</Link>
+                <Link to={`/blog-details/${blog.id}`}>{blog.title}</Link>
               </h2>
             </div>
           ))}

@@ -26,7 +26,7 @@ const AppRoutes = () => {
                 </div>
                 <Routes>
                     <Route path="home" element={<Home />} />
-                    <Route path="blog-details" element={<BlogDetails />} />
+                    <Route path="blog-details/:id" element={<BlogDetails />} />
                     <Route path="all-blogs" element={<BlogList />} />
                     <Route path="comments" element={<CommentList />} />
                     <Route path="edit-profile" element={<EditProfile />} />

@@ -37,6 +37,7 @@ const AppRoutes = () => {
                     <Route path="write-blog" element={<WriteBlog />} />
                     <Route path="write-comment" element={<WriteComment />} />
                     <Route path="writer-details" element={<WriterDetails />} />
+                    <Route exact path="" element={<Home />} />
                     <Route path="*" element={<Page404 />} />
                 </Routes>
                 {/* <div>
